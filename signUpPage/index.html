@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Signup</h1>
+
+      <form action="#">
+        <div>
+          <label for="fullName">Full Name</label>
+          <input type="text" placeholder="Type a name here" id="fullName" />
+          <span class="material-symbols-outlined" id="icon"> </span>
+          <span id="nameError"></span>
+        </div>
+        <div>
+          <label for="email"> Email</label>
+          <input type="email" placeholder="xyz@gmail.com" id="email" />
+          <span class="material-symbols-outlined" id="icon"> </span>
+          <span id="emailError"></span>
+        </div>
+        <div>
+          <label for="password">Password </label>
+          <input
+            type="password"
+            placeholder="Atleast 8 characters"
+            id="password"
+          />
+          <span class="material-symbols-outlined" id="icon"> </span>
+          <span class="material-symbols-outlined" id="eyeIcon">
+            visibility_off
+          </span>
+          <span id="passError"></span>
+        </div>
+
+        <input type="submit" id="submitForm" value="Create Account" />
+      </form>
+
+      <div>
+        <span>Already have an account?</span>
+        <a href="">Login</a>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

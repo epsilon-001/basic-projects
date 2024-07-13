@@ -1,0 +1,90 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, #ffecd2, #fcb69f);
+  color: #444;
+}
+
+.container {
+  border: 2px solid #fcb69f;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  width: 500px;
+  justify-content: space-between;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+}
+
+h1 {
+  font-size: 30px;
+  margin: 10px;
+  color: #f76c6c;
+}
+
+.inputBox {
+  width: 350px;
+  font-size: 20px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  background-color: #ffecd2;
+  outline: none;
+  border: 2px solid #fcb69f;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.size {
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  margin: 5px;
+}
+
+.sizeSelect {
+  padding: 8px;
+  border-radius: 5px;
+  border: 2px solid #fcb69f;
+  background-color: #ffecd2;
+}
+
+.qrcodeContainer {
+  height: 350px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.button {
+  display: flex;
+  justify-content: space-around;
+  width: 350px;
+}
+
+#generate,
+#download {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: #ffecd2;
+  border: 2px solid #fcb69f;
+  color: #444;
+}

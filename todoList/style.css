@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, #54777d, #feffe4);
+  color: #333;
+}
+
+.container {
+  margin: 25px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+h1 {
+  font-size: 40px;
+  padding: 10px;
+  color: #54777d;
+}
+
+.inputContainer {
+  margin: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 350px;
+}
+
+#inputBox {
+  padding: 10px;
+  width: 250px;
+  border-radius: 10px;
+  border: 2px solid #e8ecd6;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+#inputBox:focus {
+  border-color: #a1dd70;
+  box-shadow: 0 0 10px rgba(161, 221, 112, 0.5);
+}
+
+#addBtn {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #a1dd70;
+  color: #fff;
+  border: none;
+  width: 70px;
+  font-weight: bolder;
+  transition: background-color 0.3s ease;
+}
+
+#addBtn:hover {
+  background-color: #89c45b;
+}
+
+.todoList li {
+  list-style-type: none;
+  border: 2px solid #e8ecd6;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  border-radius: 10px;
+  background-color: #fdfff0;
+  transition: transform 0.2s;
+}
+
+.todoList li:hover {
+  transform: scale(1.02);
+}
+
+.todoText {
+  flex-grow: 1;
+  font-size: 18px;
+}
+
+.editBtn,
+.removeBtn {
+  margin: 5px;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  background: none;
+  cursor: pointer;
+  font-weight: bolder;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.editBtn {
+  background-color: #a1dd70;
+}
+
+.editBtn:hover {
+  background-color: #89c45b;
+}
+
+.removeBtn {
+  background-color: #a23131;
+}
+
+.removeBtn:hover {
+  background-color: #872121;
+}
